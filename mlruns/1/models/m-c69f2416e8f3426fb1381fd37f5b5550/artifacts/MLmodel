@@ -1,0 +1,56 @@
+artifact_path: file:C:/Users/Atul RN/Downloads/MLOPS/mlops/mlruns/1/models/m-c69f2416e8f3426fb1381fd37f5b5550/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.9
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - numpy.dtype
+    - sklearn.tree._tree.Tree
+    - sklearn.ensemble._hist_gradient_boosting.predictor.TreePredictor
+is_signature_from_type_hint: false
+mlflow_version: 3.17.0
+model_id: m-c69f2416e8f3426fb1381fd37f5b5550
+model_size_bytes: 19910649
+model_uuid: m-c69f2416e8f3426fb1381fd37f5b5550
+prompts: null
+run_id: 50fef59f3efd4d29a86dc8e815e76916
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "month_sin", "required": true}, {"type": "double",
+    "name": "month_cos", "required": true}, {"type": "double", "name": "doy_sin",
+    "required": true}, {"type": "double", "name": "doy_cos", "required": true}, {"type":
+    "double", "name": "solar_ALLSKY_SFC_SW_DWN", "required": true}, {"type": "double",
+    "name": "solar_T2M", "required": true}, {"type": "double", "name": "solar_WS10M",
+    "required": true}, {"type": "double", "name": "solar_WS50M", "required": true},
+    {"type": "double", "name": "solar_irradiance_x_t2m", "required": true}, {"type":
+    "double", "name": "solar_ALLSKY_SFC_SW_DWN_roll3", "required": true}, {"type":
+    "double", "name": "solar_ALLSKY_SFC_SW_DWN_roll7", "required": true}, {"type":
+    "double", "name": "solar_T2M_roll3", "required": true}, {"type": "double", "name":
+    "solar_T2M_roll7", "required": true}, {"type": "double", "name": "solar_WS10M_roll3",
+    "required": true}, {"type": "double", "name": "solar_WS10M_roll7", "required":
+    true}, {"type": "double", "name": "solar_WS50M_roll3", "required": true}, {"type":
+    "double", "name": "solar_WS50M_roll7", "required": true}, {"type": "double", "name":
+    "solar_ALLSKY_SFC_SW_DWN_lag1", "required": true}, {"type": "double", "name":
+    "solar_T2M_lag1", "required": true}, {"type": "double", "name": "solar_WS10M_lag1",
+    "required": true}, {"type": "double", "name": "solar_WS50M_lag1", "required":
+    true}, {"type": "double", "name": "solar_cf_lag1", "required": true}, {"type":
+    "double", "name": "solar_cf_lag7", "required": false}, {"type": "double", "name":
+    "solar_cf_roll7", "required": false}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-13 18:07:21.153232'
